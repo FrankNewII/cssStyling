@@ -31,14 +31,18 @@
 		tooltip:{
 			autoRender: false,
 			id: 'itemMenu',
-			style: 'position: absolute; padding: 10px 20px; border: 1px solid #b3c9ce;border-radius: 4px;text-align: center;font: italic 14px/2 arial, sans-serif;color: #333; width: 200px; background: #fff;box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);',
+            style: {
+                cssText: 'position: absolute; padding: 10px 20px; border: 1px solid #b3c9ce;border-radius: 4px;text-align: center;font: italic 14px/2 arial, sans-serif;color: #333; width: 200px; background: #fff;box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);'
+            },
 		},
 		closeButton:{
 			autoRender: false,
 			id: 'closeTooltipButton',
 			innerHTML: 'X',
 			elementType: 'button',
-			style: 'float: right; background: transparent; border: 1px solid red; border-radius: 3px; color: red;cursor: pointer;',
+            style: {
+                cssText: 'float: right; background: transparent; border: 1px solid red; border-radius: 3px; color: red;cursor: pointer;'
+            },
 			onclick: function(){
 				_showingElementItem.remove();
 			},
@@ -47,21 +51,27 @@
 			autoRender: false,
 			elementType: 'div',
 			id: 'blackScreen',
-			style: 'background: rgba(0, 0, 0, 0.36); position: fixed; height: 100%; width: 100%; top: 0; left: 0; z-index: 10000;',
+            style: {
+                cssText: 'background: rgba(0, 0, 0, 0.36); position: fixed; height: 100%; width: 100%; top: 0; left: 0; z-index: 10000;'
+            },
 			innerHTML: 'firstButton',
 			class: 'div',
 		},
 		addSpecSelector:{
 			autoRender: false,
 			elementType: 'input',
-			style: 'width:100%;',
+            style: {
+                cssText: 'width:100%;'
+            },
 			id: 'specSelector',
 			class: 'div',
 		},
 		cssRulesForSelector:{
 			autoRender: false,
 			elementType: 'textarea',
-			style: 'resize: vertical; width: 100%;',
+            style: {
+                cssText: 'resize: vertical; width: 100%;'
+            },
 			id: 'cssRules',
 			class: 'div',
 		},
@@ -70,7 +80,9 @@
 			elementType: 'button',
 			id: 'buttonAddSpecCSS',
 			innerHTML: 'Add selector and rules',
-			style: 'background: transparent;border: 1px solid #1DB648;border-radius: 3px;color: #1DB648;cursor: pointer;',
+            style: {
+                cssText: 'background: transparent;border: 1px solid #1DB648;border-radius: 3px;color: #1DB648;cursor: pointer;'
+            },
 			class: 'div',
 			onclick: function(){
 				localStorage.setItem(
@@ -83,7 +95,9 @@
 			autoRender: false,
 			elementType: 'div',
 			id: 'closeWorkSpace',
-			style: 'background: rgba(0, 0, 0, 0); position: fixed; color: gray; top: 20px; right: 20px; z-index: 10001; font-size: 40px;',
+            style: {
+                cssText: 'background: rgba(0, 0, 0, 0); position: fixed; color: gray; top: 20px; right: 20px; z-index: 10001; font-size: 40px;'
+            },
 			innerHTML: '×',
 			class: 'div',
 			onclick: function() {
